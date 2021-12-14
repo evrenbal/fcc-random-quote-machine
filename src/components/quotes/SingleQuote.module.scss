@@ -1,0 +1,81 @@
+.quote {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  cite {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .large & {
+    padding: 0 3rem;
+    line-height: 1.25;
+    font-size: 2.5rem;
+    cite {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+footer {
+  margin: 2rem -2rem -2rem -2rem;
+  align-items: center;
+ 
+  .quote-index {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.25rem;
+  }
+  a, button {
+    cursor: pointer;
+  }
+  button {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.share-links {
+  a, button {
+    font-size: 1.5em;
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+    padding: 0.75rem;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .favorite {
+    &.favorited {
+      opacity: 1;
+      color: #e50000;
+      -webkit-text-stroke: 1px white; 
+    }
+  }
+
+}
+
+.prev-button {
+  left: 1rem;
+}
+
+.next-button {
+  right: 1rem;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+@media (min-width:768px) {
+  .prev-button {
+    left: -3rem;
+  }
+  
+  .next-button {
+    right: -3rem;
+  }
+}

@@ -1,0 +1,40 @@
+@use "sass:color";
+
+@each $themeName, $themeVal in  $themes {
+  .#{$themeName} {
+    .site-bg {
+      background-color: $themeVal;
+      color: complementary-color($themeVal);
+      .inversed-bg {
+        background-color: complementary-color($themeVal);
+        color: $themeVal;
+      }
+    }
+    &.important {
+      .site-bg {
+        background-color: $themeVal !important;
+        color: complementary-color($themeVal) !important;
+      }
+    }
+  }
+
+  @for $i from 4 through 18 {
+    $theme : color.change($themeVal, $lightness: $i*5%);
+    .#{$themeName}-#{$i*5} {
+      .site-bg {
+        background-color: $theme;
+        color: complementary-color($theme);
+        .inversed-bg {
+          background-color: complementary-color($theme);
+          color: $theme;
+        }
+      }
+      &.important {
+        .site-bg {
+          background-color: $theme !important;
+          color: complementary-color($theme) !important;
+        }
+      }
+    }
+  }
+}

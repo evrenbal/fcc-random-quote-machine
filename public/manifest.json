@@ -1,0 +1,6 @@
+{
+  "short_name": "Radom Quote Machine",
+  "name": "Random Quote Mchine for freeCodeCamp Frontend Development Libraries Certification",
+  "start_url": ".",
+  "display": "standalone",
+}

@@ -1,0 +1,54 @@
+.theme-selector {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 0.25rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  @media (max-width: 767px) {
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .theme-box {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.25rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      height: 0.75rem;
+      width: 3rem;
+    }
+  }
+  .boxes-0 button {
+    color: #000 !important;
+    background-color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  .box-container {
+    position: relative;
+    &:hover {
+      ul {
+        max-height: 100vh;
+      }
+    }      
+    ul {
+      position: absolute;
+      flex-direction: column;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in;
+      padding: 0 1rem;
+      margin-left: -1.25rem;
+      li {
+        background-color: #fff;
+        padding: 0 0.25rem;
+      }
+    }
+  }
+}
