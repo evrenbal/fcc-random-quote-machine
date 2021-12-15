@@ -1,4 +1,3 @@
-import { configure } from '@testing-library/react';
 import { initStore } from 'hooks/use-store';
 
 const configureStore = ( initialState: number[] = []) => {

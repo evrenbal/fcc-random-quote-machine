@@ -1,7 +1,7 @@
-# freeCodeCamp Front End Development Libraries Certification
+# freeCodeCamp Frontend Development Libraries Certification
 # Project #1 Random Quote Machine
 
-This page is built as an assignment for the Front End Development Libraries CertificationCertification
+This page is built as an assignment for the Front End Development Libraries Certification
 
 This is a project based on React, TailwindCSS and TypeScript
 
