@@ -24,6 +24,7 @@
   "scripts": {
     "start": "SET TAILWIND_MODE=watch & SET NODE_ENV=development & react-scripts start",
     "build": "SET TAILWIND_MODE=build & SET NODE_ENV=production & react-scripts build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
