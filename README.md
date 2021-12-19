@@ -7,7 +7,7 @@ This is a project based on React, TailwindCSS and TypeScript
 
 ![FreeCodeCamp Random Qupte Machine](https://user-images.githubusercontent.com/18686022/145997746-7a39852f-f891-4efb-9442-b1603d53af60.jpg)
 
-[Live Preview](https://evrenbal.github.io/fcc-random-quote-machine)
+## [Click here for a Live Preview](https://evrenbal.github.io/fcc-random-quote-machine)
 
 **Objective**: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/qRZeGZ.
 
